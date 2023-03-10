@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock | Paper | Scissors</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="game">
+        <div class="score">
+            <div class="player-score">
+                <h2>Player's score</h2>
+                <p>0</p>
+            </div>
+
+            <div class="computer-score">
+                <h2>Computer's score</h2>
+                <p>0</p>
+            </div>
+        </div>
+
+        <div class="hands">
+            <img class="player-hand" src="./assests/rock.png" alt="" />
+            <img class="computer-hand" src="./assests/rock.png" alt="" />
+        </div>
+
+        <div class="choices">
+            <div class="rock">
+                <img src="https://i.imgflip.com/5qolvu.jpg?a465888" alt="" onclick="choice('rock')">
+            </div>
+
+            <div class="paper">
+                <img src="https://images.unsplash.com/photo-1617565085015-13cb9d366120?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d3JpbmtsZWQlMjBwYXBlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+                     alt="" onclick="choice('paper')">
+            </div>
+
+            <div class="scissors">
+                <img src="https://img.freepik.com/free-vector/purple-scissor-sticker-white-background_1308-61999.jpg?w=2000" 
+                    alt="" onclick="choice('scissors')">
+            </div>
+        </div>
+
+        <button id="stop">Stop Game</button>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
